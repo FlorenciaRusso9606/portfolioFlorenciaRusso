@@ -34,7 +34,7 @@
                 <div class="follow">
                     <a href="https://www.facebook.com/profile.php?id=61550583982023&locale=es_LA" class="fab fa-facebook-f"></a>
                     <a href="https://www.instagram.com/flor_r.js/" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-github"></a>
+                    <a href="https://github.com/FlorenciaRusso9606" class="fab fa-github"></a>
                 </div>
             </div>
             <div class="navtoggle" id="navtoggle">
@@ -167,8 +167,8 @@
                         <p><strong>Tecnologías: </strong><span>HTML, CSS, JavaScript</span></p>
                     </div>
                     <div>
-                        <button class="btn-proyect" data-label="Ver Proyecto"><a href="https://github.com/project1" target="_blank"><i class="arrow fa-solid fa-arrow-right"></i></a></button>
-                        <button class="btn-proyect" data-label="Ver Repositorio"><a href="https://project1.com" target="_blank"><i class="fa-brands fa-github"></i></a></button>
+                        <button class="btn-proyect" data-label="Ver Proyecto"><a href=https://florenciarusso9606.github.io/TPFinal_PEyLW/ target="_blank"><i class="arrow fa-solid fa-arrow-right"></i></a></button>
+                        <button class="btn-proyect" data-label="Ver Repositorio"><a href= https://github.com/FlorenciaRusso9606/TPFinal_PEyLW/settings/pages target="_blank"><i class="fa-brands fa-github"></i></a></button>
                     </div>
                 </div>
                 <div class="project-detail">
@@ -179,8 +179,8 @@
                         <p><strong>Tecnologías: </strong><span>HTML, CSS, JavaScript, Bootstrap</span></p>
                     </div>
                     <div>
-                        <button class="btn-proyect" data-label="Ver Proyecto"><a href="https://github.com/project1" target="_blank"><i class="arrow fa-solid fa-arrow-right"></i></a></button>
-                        <button class="btn-proyect" data-label="Ver Repositorio"><a href="https://project1.com" target="_blank"><i class="fa-brands fa-github"></i></a></button>
+                        <button class="btn-proyect" data-label="Ver Proyecto"><a href="https://florenciarusso9606.github.io/DesafioFinalBlum/" target="_blank"><i class="arrow fa-solid fa-arrow-right"></i></a></button>
+                        <button class="btn-proyect" data-label="Ver Repositorio"><a href=https://github.com/FlorenciaRusso9606/DesafioFinalBlum target="_blank"><i class="fa-brands fa-github"></i></a></button>
                     </div>
                 </div>
                 <div class="project-detail">
@@ -191,8 +191,7 @@
                         <p><strong>Tecnologías: </strong><span>Figma</span></p>
                     </div>
                     <div>
-                        <button class="btn-proyect" data-label="Ver Proyecto"><a href="https://github.com/project1" target="_blank"><i class="arrow fa-solid fa-arrow-right"></i></a></button>
-                        <button class="btn-proyect" data-label="Ver Repositorio"><a href="https://project1.com" target="_blank"><i class="fa-brands fa-github"></i></a></button>
+                        <button class="btn-proyect" data-label="Ver Proyecto"><a href="https://figma.com/proto/snM6GQpYeq23MmAcFHVIL8/Untitled?node-id=93-5402&p=f&t=vtOJBAsyURRh7oqq-0&scaling=scale-down&content-scaling=fixed&page-id=93%3A1992&starting-point-node-id=93%3A5402" target="_blank"><i class="arrow fa-solid fa-arrow-right"></i></a></button>
                     </div>
                 </div>
                 <div class="project-detail">
@@ -203,8 +202,8 @@
                         <p><strong>Tecnologías: </strong><span>HTML, CSS, JavaScript, PHP, MysQL</span></p>
                     </div>
                     <div>
-                        <button class="btn-proyect" data-label="Ver Proyecto"><a href="https://github.com/project1" target="_blank"><i class="arrow fa-solid fa-arrow-right"></i></a></button>
-                        <button class="btn-proyect" data-label="Ver Repositorio"><a href="https://project1.com" target="_blank"><i class="fa-brands fa-github"></i></a></button>
+                        <button class="btn-proyect" data-label="Ver Proyecto"><a href="http://proyectofinalpwd.infinityfreeapp.com/" target="_blank"><i class="arrow fa-solid fa-arrow-right"></i></a></button>
+                        <button class="btn-proyect" data-label="Ver Repositorio"><a href="https://github.com/FlorenciaRusso9606/PWD_TPFinal" target="_blank"><i class="fa-brands fa-github"></i></a></button>
                     </div>
                 </div>
             </div>
