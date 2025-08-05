@@ -36,7 +36,7 @@ cd portfolio
 npm install
 npm run dev
 
-
+```
 🌐 Enlace en producción
 
 [👉 Ver portfolio en vivo](https://tu-link.vercel.app)
@@ -44,7 +44,7 @@ npm run dev
 
 
 📁 Estructura de carpetas (resumen)
-
+```
 src/
 │
 ├── components/
@@ -63,7 +63,7 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
-
+```
 
 📫 Contacto
 
