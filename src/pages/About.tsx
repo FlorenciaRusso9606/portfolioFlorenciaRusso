@@ -9,7 +9,6 @@ import {
   FaChalkboardTeacher,
   FaProjectDiagram,
   FaPlayCircle,
-  FaReact,
   FaBook
 } from 'react-icons/fa';
 

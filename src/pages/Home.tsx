@@ -1,6 +1,5 @@
 import { FaArrowRight } from 'react-icons/fa';
 import Reveal from '../components/Reveal';
-import Button from '../components/Button';
 
 const Home = () => {
   return (
