@@ -4,7 +4,7 @@ import Reveal from '../components/Reveal';
 const projects = [
   {
     title: 'Mi Filmoteca',
-    image: 'public/img/Mi-Filmoteca.png',
+    image: '/img/Mi-Filmoteca.png',
     stack: ['React'],
     demo: 'https://tp-react-93tu.vercel.app/',
     github: 'https://github.com/FlorenciaRusso9606/Tp-React',
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: 'Sinestesia',
-    image: 'public/img/Sinestesia.png',
+    image: '/img/Sinestesia.png',
     stack: ['React'],
     demo: 'https://tp-react-2-mu.vercel.app/',
     github: 'https://github.com/flor/todo',
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: 'Movie-tracker',
-    image: 'public/img/Movie-tracker.png',
+    image: '/img/Movie-tracker.png',
     stack: ['React', 'Typsecript', "Node", "MySQL"],
     demo: '#',
     github: 'https://github.com/FlorenciaRusso9606/Movie_Tracker',
