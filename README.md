@@ -70,6 +70,6 @@ src/
 - 💼 [LinkedIn](https://www.linkedin.com/in/florencia-russo-65976b287/)
 - 🐱 [GitHub](https://github.com/FlorenciaRusso9606)
 - ✉️ [Email](mailto:russoflorencia96@gmail.com)
-- 📄 [Ver CV]()
+- 📄 [Ver CV](public/CV_Florencia_Russo.pdf)
 
 🙌 Gracias por visitar mi portfolio 💜

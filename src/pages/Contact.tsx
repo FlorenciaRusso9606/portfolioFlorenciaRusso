@@ -101,7 +101,8 @@ const onSubmit = async (data: ContactFormData) => {
           Enviar mensaje
         </Button>
       </motion.form>
-
+</Reveal>
+<Reveal>
       <div className="mt-10 flex justify-center gap-6 text-2xl">
         <a
           href="https://github.com/FlorenciaRusso9606"
@@ -126,6 +127,15 @@ const onSubmit = async (data: ContactFormData) => {
           <FaEnvelope />
         </a>
       </div>
+      <div className="mt-6">
+  <a
+    href="../public/CV_Florencia_Russo.pdf"
+    download
+    className="mt-3 inline-block px-6 py-2 border border-[var(--primary-color)] text-[var(--button-text-color)] rounded bg-[var(--primary-color)] hover:scale-105  transition-colors"
+  >
+    Descargar CV
+  </a>
+</div>
         </Reveal>
       
     </section>
