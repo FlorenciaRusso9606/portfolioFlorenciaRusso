@@ -3,28 +3,28 @@ import { FaRocket } from "react-icons/fa6";
 import Reveal from '../components/Reveal';
 const projects = [
   {
-    title: 'Movie Tracker',
-    image: '/img/movie-tracker.png',
-    stack: ['React', 'TypeScript', 'Node.js'],
-    demo: 'https://movie-tracker.vercel.app',
-    github: 'https://github.com/flor/movie-tracker',
+    title: 'Mi Filmoteca',
+    image: 'public/img/Mi-Filmoteca.png',
+    stack: ['React'],
+    demo: 'https://tp-react-93tu.vercel.app/',
+    github: 'https://github.com/FlorenciaRusso9606/Tp-React',
     featured: true,
   },
   {
-    title: 'ToDo App',
-    image: '/img/todo.png',
-    stack: ['React', 'Firebase'],
-    demo: 'https://todo-flor.vercel.app',
+    title: 'Sinestesia',
+    image: 'public/img/Sinestesia.png',
+    stack: ['React'],
+    demo: 'https://tp-react-2-mu.vercel.app/',
     github: 'https://github.com/flor/todo',
     featured: true,
   },
   {
-    title: 'Clima App',
-    image: '/img/weather.png',
-    stack: ['JS', 'OpenWeather API'],
+    title: 'Movie-tracker',
+    image: 'public/img/Movie-tracker.png',
+    stack: ['React', 'Typsecript', "Node", "MySQL"],
     demo: '#',
-    github: '#',
-    featured: false,
+    github: 'https://github.com/FlorenciaRusso9606/Movie_Tracker',
+    featured: true,
   },
 ];
 
@@ -46,7 +46,7 @@ const Projects = () => {
               className="bg-[var(--bg-color)] shadow-md rounded-xl overflow-hidden"
               whileHover={{ scale: 1.03 }}
             >
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+              <img src={project.image} alt={project.title} className="w-full h-auto object-contain" />
               <div className="p-4">
                 <h4 className="text-xl font-bold">{project.title}</h4>
                 <p className="text-sm my-2">{project.stack.join(', ')}</p>

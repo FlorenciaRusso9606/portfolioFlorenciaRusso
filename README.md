@@ -26,7 +26,7 @@ Este es mi portfolio personal desarrollado con **React**, **TypeScript**, **Tail
 
 ## 📷 Captura
 
-![Screenshot del portfolio](public/CapturaPantallaProyecto-png)
+![Screenshot del portfolio](public/img/CapturaPantallaProyecto-png)
 
 ## 🛠 Cómo correr el proyecto localmente
 
