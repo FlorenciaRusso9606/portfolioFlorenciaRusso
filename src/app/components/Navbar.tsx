@@ -41,7 +41,7 @@ export default function Navbar() {
         {/* Logo */}
         <button
           onClick={() => handleScroll("home")}
-          className="font-poppins text-lg font-semibold text-neutral-200 hover:text-emerald-400 transition"
+          className="font-poppins text-lg font-semibold text-neutral-200 hover:text-emerald-400 transition cursor-pointer"
         >
           &lt;FlorenciaRusso/&gt;
         </button>
@@ -52,10 +52,10 @@ export default function Navbar() {
             <li key={item.id} className="group">
               <button
                 onClick={() => handleScroll(item.id)}
-                className="relative text-neutral-300 hover:text-emerald-400 transition"
+                className="relative text-neutral-300 hover:text-emerald-400 transition cursor-pointer"
               >
                 {item.label}
-                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-emerald-400 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-emerald-400 transition-all duration-300 group-hover:w-full " />
               </button>
             </li>
           ))}
@@ -97,7 +97,7 @@ export default function Navbar() {
           <li key={item.id}>
             <button
               onClick={() => handleScroll(item.id)}
-              className="text-neutral-300 cursor-pointer text-base hover:text-emerald-400 transition"
+              className="text-neutral-300 cursor-pointer text-base hover:text-emerald-400 transition "
             >
               {item.label}
             </button>
