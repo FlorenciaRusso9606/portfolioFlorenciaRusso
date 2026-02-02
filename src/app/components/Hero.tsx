@@ -29,13 +29,20 @@ const itemVariants = {
   return (
    <section
      ref={heroRef}
-  id="home" className="flex min-h-screen justify-center px-10 items-center">
-
+  id="home"   className="flex min-h-screen items-center justify-center gap-10 px-10
+             flex-col md:flex-row"
+>
+<motion.div
+  style={{ y: rocketY }}
+  className="order-1 md:order-2"
+>
+  <Rocket />
+</motion.div>
   <div
   className="
     flex flex-col items-center justify-center px-6 text-center
    
-    transition-colors
+    transition-colors order-2 md:order-1
   "
 >
 
@@ -135,11 +142,7 @@ const itemVariants = {
 </motion.a>
       </div>
       </div>
-   <motion.div
-  style={{ y: rocketY }}
->
-  <Rocket />
-</motion.div>
+ 
 
     </section>
   );
