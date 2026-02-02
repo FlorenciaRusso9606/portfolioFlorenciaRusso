@@ -6,7 +6,7 @@ export default function Rocket() {
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 214.43 352.56"
-      className="w-12 md:w-28 h-auto"
+      className="w-16 md:w-28 h-auto"
       initial={{ y: 0 }}
       animate={{ y: [0, -6, 0] }}
       transition={{
