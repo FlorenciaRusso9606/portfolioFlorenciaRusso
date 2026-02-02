@@ -1,6 +1,21 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Github, Linkedin, Download } from "lucide-react";
+import  Rocket  from "./Rocket";
+import { useRef } from "react";
+
+export default function Hero() {
+  const { scrollY } = useScroll();
+const heroRef = useRef<HTMLElement | null>(null);
+const { scrollYProgress } = useScroll();
+
+const rocketY = useTransform(
+  scrollYProgress,
+  [0, 0.3],
+  [0, -800]
+);
+
+
 
 const itemVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -11,16 +26,19 @@ const itemVariants = {
   }),
 };
 
-export default function Hero() {
   return (
    <section
-  id="home"
+     ref={heroRef}
+  id="home" className="flex min-h-screen justify-center px-10 items-center">
+
+  <div
   className="
-    flex min-h-screen flex-col items-center justify-center px-6 text-center
+    flex flex-col items-center justify-center px-6 text-center
    
     transition-colors
   "
 >
+
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -116,6 +134,13 @@ export default function Hero() {
   Descargar CV
 </motion.a>
       </div>
+      </div>
+   <motion.div
+  style={{ y: rocketY }}
+>
+  <Rocket />
+</motion.div>
+
     </section>
   );
 }
