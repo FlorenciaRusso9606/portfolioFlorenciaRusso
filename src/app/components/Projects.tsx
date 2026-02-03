@@ -6,7 +6,7 @@ const projects = [
 {
 title: "Red Social (TFI)",
 description: "Aplicación web colaborativa full-stack con autenticación y sistema de interacciones.",
-tech: ["React", "Node.js", "MongoDB", "JWT"],
+tech: ["Next.js", "TypeScript","Express", "PostgreSQL", "JWT", "Material UI"],
 demoUrl: "/videos/red-social-demo.mp4",
 },
 {
