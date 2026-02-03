@@ -75,7 +75,7 @@ export default function Contact() {
         {/* Efecto de pulso cuando está activo */}
         {isTapped && (
           <motion.div
-            className="absolute inset-0 rounded-xl bg-emerald-400/20"
+            className="absolute inset-0 rounded-xl  bg-emerald-600/20 dark:bg-emerald-400/20"
             initial={{ opacity: 0.5, scale: 1 }}
             animate={{ opacity: 0, scale: 1.2 }}
             transition={{ duration: 0.3 }}
