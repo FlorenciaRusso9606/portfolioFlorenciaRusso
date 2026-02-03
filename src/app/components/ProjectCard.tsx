@@ -35,7 +35,7 @@ export default function ProjectCard({
         bg-neutral-100 text-neutral-900
         border-neutral-300
         shadow-sm
-        transition-all duration-300
+        transition-all duration-200
         dark:bg-neutral-900 dark:text-neutral-400
         dark:border-neutral-800
         touch-manipulation
@@ -51,7 +51,7 @@ export default function ProjectCard({
       {/* Glow verde */}
       <div className={`
         pointer-events-none absolute inset-0 rounded-2xl 
-        transition-opacity duration-300
+        transition-opacity duration-200
         ${isHovered ? 'opacity-100' : 'opacity-0'}
         group-active:opacity-100
       `}>
@@ -77,7 +77,7 @@ export default function ProjectCard({
 
         <h3 className={`
           text-xl font-medium mb-2
-          transition-colors duration-300
+          transition-colors duration-200
           ${isHovered 
             ? 'text-emerald-600 dark:text-emerald-400' 
             : 'text-neutral-700 dark:text-neutral-300'
@@ -88,7 +88,7 @@ export default function ProjectCard({
 
         <p className={`
           mb-4
-          transition-colors duration-300
+          transition-colors duration-200
           text-neutral-600 dark:text-neutral-400
           ${isHovered ? 'dark:text-emerald-300/90' : ''}
         `}>
@@ -101,7 +101,7 @@ export default function ProjectCard({
               key={t}
               className={`
                 rounded-full px-3 py-1
-                transition-all duration-300
+                transition-all duration-200
                 bg-neutral-100 text-neutral-700
                 dark:bg-neutral-800 dark:text-neutral-300
                 ${isHovered 
@@ -127,7 +127,7 @@ export default function ProjectCard({
           className={`
             inline-flex items-center justify-center gap-2 
              p-2 rounded-xl text-sm font-medium
-            transition-all duration-300
+            transition-all duration-100
             
            
             text-neutral-700 dark:text-neutral-300
