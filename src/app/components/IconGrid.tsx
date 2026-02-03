@@ -71,7 +71,7 @@ export default function IconGrid({ id, title, items }: Props) {
                 whitespace-nowrap rounded-md px-2 py-1 text-xs 
                bg-neutral-200 text-neutral-800
     dark:bg-neutral-800 dark:text-neutral-100
-                opacity-0 scale-95 transition-all duration-200
+                opacity-0 scale-95 transition-all duration-100
                 group-hover:opacity-100 group-hover:scale-100
                 ${activeIndex === i ? "opacity-100 scale-100" : "opacity-0 scale-95"}
                 z-50
