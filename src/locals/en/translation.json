@@ -1,0 +1,47 @@
+{
+  "contactSection":{
+    "title": "Contact",
+    "proposal": "Are you interested in working with me or do you have a proposal?",
+  "contact": "Write to me"
+  },
+  "heroSection":
+  {
+  "intro": "Full Stack Web Developer with a focus on Frontend, creating modern, functional and polished experiences.",
+  "cv": "Download CV" 
+
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "tech": "Technologies",
+    "tools": "Tools",
+      "contact": "Contact"
+
+  
+},
+  "projectsSection": {
+    "title": "Projects",
+        "demo": "View Demo"
+
+  },
+  "projects": {
+    "social": {
+      "title": "Social Network (Final Project)",
+      "description": "Full-stack collaborative web application with authentication and interaction system."
+    },
+    "ecommerce": {
+      "title": "E-commerce – La Chacra",
+      "description": "E-commerce with persistent cart, payments and custom backend."
+    }
+  },
+
+    "technologiesSection":{
+    "title": "Technologies"
+},
+     "toolsSection": {
+    "title": "Tools"
+  }
+
+
+  
+}

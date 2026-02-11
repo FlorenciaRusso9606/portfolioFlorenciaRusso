@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { t } from "i18next";
 import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 
@@ -48,7 +49,7 @@ export default function ProjectCard({
       `}
       style={{ WebkitTapHighlightColor: 'transparent' }}
     >
-      {/* Glow verde */}
+      {/* Glow */}
       <div className={`
         pointer-events-none absolute inset-0 rounded-2xl 
         transition-opacity duration-200
@@ -62,7 +63,7 @@ export default function ProjectCard({
         " />
       </div>
 
-      {/* Contenido que se expande */}
+   
       <div className="relative z-10 flex-1">
         <video
           src={demoUrl}
@@ -116,7 +117,7 @@ export default function ProjectCard({
         </ul>
       </div>
 
-      {/* Botón siempre abajo */}
+
       <div className="relative z-10 mt-auto pt-4 border-t border-neutral-300/50 dark:border-neutral-700/50">
         <motion.a
           href={demoUrl}
@@ -148,7 +149,7 @@ export default function ProjectCard({
           style={{ WebkitTapHighlightColor: 'transparent' }}
         >
           <ExternalLink size={16} />
-          Ver demo
+          {t("projectsSection.demo")}
         </motion.a>
       </div>
     </motion.article>

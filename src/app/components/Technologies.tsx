@@ -13,6 +13,7 @@ import {
   SiGit,
   SiFramer,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const techs = [
   { name: "HTML", icon: SiHtml5 },
@@ -29,10 +30,12 @@ const techs = [
 ];
 
 export default function Technologies() {
+   const { t } = useTranslation();
+  
   return (
   <IconGrid
   id="tech"
-  title="Tecnologías"
+  title={t("technologiesSection.title")}
   items={techs}
 />
   );

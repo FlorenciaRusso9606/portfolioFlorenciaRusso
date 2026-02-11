@@ -2,10 +2,12 @@
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   const [isTapped, setIsTapped] = useState(false);
 
+ const { t } = useTranslation();
   return (
     <section
       id="contact"
@@ -18,7 +20,7 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         className="text-3xl font-semibold mb-6 font-poppins"
       >
-        Contacto
+       {t("contactSection.title")}
       </motion.h2>
 
       <motion.p
@@ -28,7 +30,7 @@ export default function Contact() {
         transition={{ delay: 0.2 }}
         className="mb-8 text-neutral-600 dark:text-neutral-400"
       >
-        ¿Te interesa trabajar conmigo o tenés una propuesta?
+        {t("contactSection.proposal")}
       </motion.p>
 
       <motion.a
@@ -72,7 +74,7 @@ export default function Contact() {
           WebkitTapHighlightColor: 'transparent', 
         }}
       >
-        {/* Efecto de pulso cuando está activo */}
+      
         {isTapped && (
           <motion.div
             className="absolute inset-0 rounded-xl  bg-emerald-600/20 dark:bg-emerald-400/20"
@@ -83,7 +85,7 @@ export default function Contact() {
         )}
         
         <Mail size={18} />
-        Escribime
+        {t("contactSection.contact")}
       </motion.a>
     </section>
   );

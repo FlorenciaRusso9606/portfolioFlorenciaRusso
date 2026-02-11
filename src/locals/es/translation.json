@@ -1,0 +1,47 @@
+{
+  "contactSection":{
+    "title": "Contacto",
+    "proposal": "¿Te interesa trabajar conmigo o tenés una propuesta?",
+      "contact": "Escribime"
+  } ,
+   "heroSection":
+  {
+  "intro": "Desarrolladora Web Full Stack con foco en Frontend, creando experiencias modernas, funcionales y cuidadas.",
+    "cv": "Descargar CV"
+
+  },
+     "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "tech": "Tecnologías",
+    "tools": "Herramientas",
+    "contact": "Contacto"
+  },
+  
+
+  "projectsSection": {
+    "title": "Proyectos",
+    "demo": "Ver Demo"
+  },
+  "projects": {
+    "social": {
+      "title": "Red Social (TFI)",
+      "description": "Aplicación web colaborativa full-stack con autenticación y sistema de interacciones."
+    },
+    "ecommerce": {
+      "title": "E-commerce – La Chacra",
+      "description": "E-commerce con carrito persistente, pagos y backend propio."
+    }
+  },
+   "technologiesSection":{
+    "title": "Tecnologías"
+},
+     "toolsSection": {
+    "title": "Herramientas"
+  }
+
+
+
+
+
+}

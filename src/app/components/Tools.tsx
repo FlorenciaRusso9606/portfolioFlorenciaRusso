@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import IconGrid from "./IconGrid"
+import { useTranslation } from "react-i18next";
+
 import {
   SiGithub,
   SiFigma,
@@ -18,10 +20,12 @@ const tools = [
 ];
 
 export default function Tools() {
+   const { t } = useTranslation();
+
   return (
    <IconGrid
   id="tools"
-  title="Herramientas / Workflow"
+  title={t("toolsSection.title")}
   items={tools}
 />
   );

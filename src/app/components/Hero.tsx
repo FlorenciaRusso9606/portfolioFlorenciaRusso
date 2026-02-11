@@ -3,11 +3,16 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Github, Linkedin, Download } from "lucide-react";
 import Rocket from "./Rocket";
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
   const [isTapped, setIsTapped] = useState(false);
   const heroRef = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll();
+
+ const { t, i18n  } = useTranslation();
+ const currentLang = i18n.resolvedLanguage?.startsWith("es") ? "es" : "en";
+const cvPath = `/cv/${currentLang}/Florencia_Russo_CV_FullStack.pdf`;
 
   const rocketY = useTransform(
     scrollYProgress,
@@ -64,8 +69,7 @@ export default function Hero() {
           dark:text-neutral-400
         "
         >
-          Desarrolladora Web Full Stack con foco en Frontend,
-          creando experiencias modernas, funcionales y cuidadas.
+          {t("heroSection.intro")}
         </motion.p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
@@ -131,9 +135,9 @@ export default function Hero() {
             variants={itemVariants}
             initial="hidden"
             animate="visible"
-            href="/cv/Florencia_Russo_CV.pdf"
-            download="Florencia_Russo_CV.pdf"
-            aria-label="Descargar CV"
+            href={cvPath}
+download={`Florencia_Russo_CV_${currentLang}.pdf`}
+aria-label={t("heroSection.cv")}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
             onTapStart={() => setIsTapped(true)}
@@ -165,7 +169,7 @@ export default function Hero() {
             `}
             style={{ WebkitTapHighlightColor: 'transparent' }}
           >
-            {/* Efecto de pulso cuando está activo */}
+          
             {isTapped && (
               <motion.div
                 className="absolute inset-0 rounded-xl bg-emerald-600/20 dark:bg-emerald-400/20"
@@ -176,7 +180,7 @@ export default function Hero() {
             )}
 
             <Download size={18} className="shrink-0" />
-            <span className="whitespace-nowrap">Descargar CV</span>
+            <span className="whitespace-nowrap">{t("heroSection.cv")}</span>
           </motion.a>
         </div>
       </div>

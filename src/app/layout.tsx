@@ -1,5 +1,5 @@
 "use client";
-
+import i18n from "../i18n"
 import "./globals.css";
 
 import { Poppins, Montserrat } from "next/font/google";
@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="es"
+ <html lang={i18n.language}
+
       suppressHydrationWarning
       className={`${poppins.variable} ${montserrat.variable}`}
     >

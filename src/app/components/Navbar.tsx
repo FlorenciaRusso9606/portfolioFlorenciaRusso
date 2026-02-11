@@ -3,17 +3,23 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import { useTranslation } from "react-i18next";
+import { LanguageToggle } from "./LanguageToggle";
+
 
 const items = [
-  { label: "Inicio", id: "home" },
-  { label: "Proyectos", id: "projects" },
-  { label: "Tecnologías", id: "tech" },
-  { label: "Herramientas", id: "tools" },
-  { label: "Contacto", id: "contact" },
+  { labelKey: "nav.home", id: "home" },
+  { labelKey: "nav.projects", id: "projects" },
+  { labelKey: "nav.tech", id: "tech" },
+  { labelKey: "nav.tools", id: "tools" },
+  { labelKey: "nav.contact", id: "contact" },
 ];
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
+ const { t } = useTranslation();
 
   function handleScroll(id: string) {
     const el = document.getElementById(id);
@@ -54,17 +60,17 @@ export default function Navbar() {
                 onClick={() => handleScroll(item.id)}
                 className="relative text-neutral-300 hover:text-emerald-400 transition cursor-pointer"
               >
-                {item.label}
+               {t(item.labelKey)}
                 <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-emerald-400 transition-all duration-300 group-hover:w-full " />
               </button>
             </li>
           ))}
         </ul>
 
-        {/* Right actions */}
+      
         <div className="flex items-center gap-3">
           <ThemeToggle />
-
+          <LanguageToggle/>
           {/* Hamburger */}
           <button
             onClick={() => setOpen((prev) => !prev)}
@@ -99,7 +105,7 @@ export default function Navbar() {
               onClick={() => handleScroll(item.id)}
               className="text-neutral-300 cursor-pointer text-base hover:text-emerald-400 transition "
             >
-              {item.label}
+              {t(item.labelKey)}
             </button>
           </li>
         ))}
