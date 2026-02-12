@@ -103,7 +103,7 @@ export default function ProjectCard({
               className={`
                 rounded-full px-3 py-1
                 transition-all duration-200
-                bg-neutral-100 text-neutral-700
+                bg-neutral-200 text-neutral-700
                 dark:bg-neutral-800 dark:text-neutral-300
                 ${isHovered 
                   ? 'text-emerald-600 dark:text-emerald-400' 
