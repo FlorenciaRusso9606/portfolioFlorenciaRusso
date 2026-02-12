@@ -19,7 +19,7 @@ export const LanguageToggle = () => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       onClick={handleChangeLanguage}
-      className="h-10 w-10 rounded-xl border border-neutral-800 dark:border-neutral-700 bg-neutral-800 dark:bg-neutral-900 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 transition"
+      className="h-10 w-10 rounded-xl cursor-pointer border border-neutral-800 dark:border-neutral-700 bg-neutral-800 dark:bg-neutral-900 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 transition"
     >
       {label}
     </motion.button>

@@ -31,7 +31,16 @@
     "ecommerce": {
       "title": "E-commerce – La Chacra",
       "description": "E-commerce con carrito persistente, pagos y backend propio."
-    }
+    },
+    "spotify": {
+  "title": "Sinestesia – Explorador Spotify",
+  "description": "Aplicación web integrada con la API privada de Spotify mediante autenticación PKCE. Incluye búsqueda dinámica, gestión de playlists y seguimiento de artistas."
+},
+"inta": {
+  "title": "INTA – Visualizador de Costos Agropecuarios",
+  "description": "Aplicación web para estimación de costos agrícolas con módulos de cálculo y visualización interactiva de datos mediante Chart.js."
+}
+
   },
    "technologiesSection":{
     "title": "Tecnologías"
