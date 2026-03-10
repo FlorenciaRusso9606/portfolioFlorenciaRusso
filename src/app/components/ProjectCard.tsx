@@ -9,6 +9,9 @@ interface Props {
   description: string;
   tech: string[];
   demoUrl: string;
+  repoFrontend?: string;
+  repoBackend?: string;
+  repo?: string;
 }
 
 export default function ProjectCard({
@@ -16,6 +19,9 @@ export default function ProjectCard({
   description,
   tech,
   demoUrl,
+  repoFrontend,
+  repoBackend,
+  repo,
 }: Props) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -42,28 +48,31 @@ export default function ProjectCard({
         touch-manipulation
         active:scale-[0.99] active:border-emerald-400/40
         dark:active:border-emerald-400/30
-        ${isHovered ? 'border-emerald-400/30 dark:border-emerald-400/20' : ''}
+        ${isHovered ? "border-emerald-400/30 dark:border-emerald-400/20" : ""}
         
         /* Contenedor flex para alinear contenido */
         flex flex-col h-full
       `}
-      style={{ WebkitTapHighlightColor: 'transparent' }}
+      style={{ WebkitTapHighlightColor: "transparent" }}
     >
       {/* Glow */}
-      <div className={`
+      <div
+        className={`
         pointer-events-none absolute inset-0 rounded-2xl 
         transition-opacity duration-200
-        ${isHovered ? 'opacity-100' : 'opacity-0'}
+        ${isHovered ? "opacity-100" : "opacity-0"}
         group-active:opacity-100
-      `}>
-        <div className="
+      `}
+      >
+        <div
+          className="
           absolute inset-0 rounded-2xl
           shadow-[0_0_40px_-12px_rgba(16,185,129,0.6)] 
           dark:shadow-[0_0_40px_-12px_rgba(16,185,129,0.3)]
-        " />
+        "
+        />
       </div>
 
-   
       <div className="relative z-10 flex-1">
         <video
           src={demoUrl}
@@ -76,23 +85,28 @@ export default function ProjectCard({
           "
         />
 
-        <h3 className={`
+        <h3
+          className={`
           text-xl font-medium mb-2
           transition-colors duration-200
-          ${isHovered 
-            ? 'text-emerald-600 dark:text-emerald-400' 
-            : 'text-neutral-700 dark:text-neutral-300'
+          ${
+            isHovered
+              ? "text-emerald-600 dark:text-emerald-400"
+              : "text-neutral-700 dark:text-neutral-300"
           }
-        `}>
+        `}
+        >
           {title}
         </h3>
 
-        <p className={`
+        <p
+          className={`
           mb-4
           transition-colors duration-200
           text-neutral-600 dark:text-neutral-400
-          ${isHovered ? 'dark:text-emerald-300/90' : ''}
-        `}>
+          ${isHovered ? "dark:text-emerald-300/90" : ""}
+        `}
+        >
           {description}
         </p>
 
@@ -105,9 +119,10 @@ export default function ProjectCard({
                 transition-all duration-200
                 bg-neutral-200 text-neutral-700
                 dark:bg-neutral-800 dark:text-neutral-300
-                ${isHovered 
-                  ? 'text-emerald-600 dark:text-emerald-400' 
-                  : 'text-neutral-700 dark:text-neutral-300'
+                ${
+                  isHovered
+                    ? "text-emerald-600 dark:text-emerald-400"
+                    : "text-neutral-700 dark:text-neutral-300"
                 }
               `}
             >
@@ -116,7 +131,6 @@ export default function ProjectCard({
           ))}
         </ul>
       </div>
-
 
       <div className="relative z-10 mt-auto pt-4 border-t border-neutral-300/50 dark:border-neutral-700/50">
         <motion.a
@@ -141,16 +155,122 @@ export default function ProjectCard({
             focus-visible:outline-none focus-visible:ring-2 
             focus-visible:ring-emerald-400 focus-visible:ring-offset-2
             
-            ${isHovered 
-              ? 'border-emerald-400/40 dark:border-emerald-400/30' 
-              : ''
+            ${
+              isHovered
+                ? "border-emerald-400/40 dark:border-emerald-400/30"
+                : ""
             }
           `}
-          style={{ WebkitTapHighlightColor: 'transparent' }}
+          style={{ WebkitTapHighlightColor: "transparent" }}
         >
           <ExternalLink size={16} />
           {t("projectsSection.demo")}
         </motion.a>
+        {repo && (
+          <motion.a
+            href={repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ x: 4 }}
+            whileTap={{ x: 2, scale: 0.95 }}
+            className={`
+            inline-flex items-center justify-center gap-2 
+             p-2 rounded-xl text-sm font-medium
+            transition-all duration-100
+            
+           
+            text-neutral-700 dark:text-neutral-300
+            
+            hover:text-emerald-600 hover:border-emerald-400/50
+            dark:hover:text-emerald-400 dark:hover:border-emerald-400/30
+            active:scale-95 active:text-emerald-700
+            dark:active:text-emerald-300
+            
+            focus-visible:outline-none focus-visible:ring-2 
+            focus-visible:ring-emerald-400 focus-visible:ring-offset-2
+            
+            ${
+              isHovered
+                ? "border-emerald-400/40 dark:border-emerald-400/30"
+                : ""
+            }
+          `}
+            style={{ WebkitTapHighlightColor: "transparent" }}
+          >
+            <ExternalLink size={16} />
+            {t("projectsSection.repo")}
+          </motion.a>
+        )}
+        {repoFrontend && (
+          <motion.a
+            href={repoFrontend}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ x: 4 }}
+            whileTap={{ x: 2, scale: 0.95 }}
+            className={`
+            inline-flex items-center justify-center gap-2 
+             p-2 rounded-xl text-sm font-medium
+            transition-all duration-100
+            
+           
+            text-neutral-700 dark:text-neutral-300
+            
+            hover:text-emerald-600 hover:border-emerald-400/50
+            dark:hover:text-emerald-400 dark:hover:border-emerald-400/30
+            active:scale-95 active:text-emerald-700
+            dark:active:text-emerald-300
+            
+            focus-visible:outline-none focus-visible:ring-2 
+            focus-visible:ring-emerald-400 focus-visible:ring-offset-2
+            
+            ${
+              isHovered
+                ? "border-emerald-400/40 dark:border-emerald-400/30"
+                : ""
+            }
+          `}
+            style={{ WebkitTapHighlightColor: "transparent" }}
+          >
+            <ExternalLink size={16} />
+            {t("projectsSection.repoFrontend")}
+          </motion.a>
+        )}
+        {repoBackend && (
+          <motion.a
+            href={repoBackend}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ x: 4 }}
+            whileTap={{ x: 2, scale: 0.95 }}
+            className={`
+            inline-flex items-center justify-center gap-2 
+             p-2 rounded-xl text-sm font-medium
+            transition-all duration-100
+            
+           
+            text-neutral-700 dark:text-neutral-300
+            
+            hover:text-emerald-600 hover:border-emerald-400/50
+            dark:hover:text-emerald-400 dark:hover:border-emerald-400/30
+            active:scale-95 active:text-emerald-700
+            dark:active:text-emerald-300
+            
+            focus-visible:outline-none focus-visible:ring-2 
+            focus-visible:ring-emerald-400 focus-visible:ring-offset-2
+            
+            ${
+              isHovered
+                ? "border-emerald-400/40 dark:border-emerald-400/30"
+                : ""
+            }
+          `}
+            style={{ WebkitTapHighlightColor: "transparent" }}
+          >
+            <ExternalLink size={16} />
+            {t("projectsSection.repoBackend")}
+          </motion.a>
+        )}
       </div>
     </motion.article>
   );

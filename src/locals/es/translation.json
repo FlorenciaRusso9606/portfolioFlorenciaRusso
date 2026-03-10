@@ -6,7 +6,7 @@
   } ,
    "heroSection":
   {
-  "intro": "Desarrolladora Web Full Stack con foco en Frontend, creando experiencias modernas, funcionales y cuidadas.",
+  "intro": "Desarrolladora Full Stack especializada en React, Next.js y Node.js, enfocada en construir aplicaciones web funcionales y escalables.",
     "cv": "Descargar CV"
 
   },
@@ -21,12 +21,15 @@
 
   "projectsSection": {
     "title": "Proyectos",
-    "demo": "Ver Demo"
+    "demo": "Ver Demo",
+    "repo": "Repo",
+    "repoFrontend": "Repo Frontend",
+    "repoBackend": "Repo Backend"
   },
   "projects": {
     "social": {
       "title": "Red Social (TFI)",
-      "description": "Aplicación web colaborativa full-stack con autenticación y sistema de interacciones."
+      "description": "Red social full stack con autenticación JWT, publicaciones, comentarios y sistema de reacciones entre usuarios."
     },
     "ecommerce": {
       "title": "E-commerce – La Chacra",

@@ -6,7 +6,7 @@
   },
   "heroSection":
   {
-  "intro": "Full Stack Web Developer with a focus on Frontend, creating modern, functional and polished experiences.",
+  "intro": "Full Stack Developer specializing in React, Next.js and Node.js, focused on building functional and scalable web applications.",
   "cv": "Download CV" 
 
   },
@@ -21,13 +21,16 @@
 },
   "projectsSection": {
     "title": "Projects",
-        "demo": "View Demo"
+        "demo": "View Demo",
+       "github": "Repo",
+    "repoFrontend": "Repo Frontend",
+    "repoBackend": "Repo Backend"
 
   },
   "projects": {
     "social": {
       "title": "Social Network (Final Project)",
-      "description": "Full-stack collaborative web application with authentication and interaction system."
+      "description": "Full stack social network with JWT authentication, posts, comments and a user reaction system."
     },
     "ecommerce": {
       "title": "E-commerce – La Chacra",
