@@ -21,16 +21,18 @@ export default function Navbar() {
 
  const { t } = useTranslation();
 
-  function handleScroll(id: string) {
+function handleScroll(id: string) {
+  setOpen(false);
+
+  setTimeout(() => {
     const el = document.getElementById(id);
     if (!el) {
       return;
     }
 
     el.scrollIntoView({ behavior: "smooth", block: "start" });
-    setOpen(false);
-  }
-
+  }, 200);
+}
   return (
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
