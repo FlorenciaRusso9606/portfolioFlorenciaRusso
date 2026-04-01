@@ -33,7 +33,7 @@
     },
     "ecommerce": {
       "title": "E-commerce – La Chacra",
-      "description": "E-commerce con carrito persistente, pagos y backend propio."
+      "description": "E-commerce con carrito persistente, pagos reales (Mercado Pago), almacenamiento de imágenes en AWS S3, panel de administración, sincronización de stock y pruebas automatizadas con CI."
     },
     "spotify": {
   "title": "Sinestesia – Explorador Spotify",

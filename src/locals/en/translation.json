@@ -33,8 +33,8 @@
       "description": "Full stack social network with JWT authentication, posts, comments and a user reaction system."
     },
     "ecommerce": {
-      "title": "E-commerce – La Chacra",
-      "description": "E-commerce with persistent cart, payments and custom backend."
+      "title": "E-commerce - La Chacra",
+      "description": "E-commerce with persistent cart, real payments (Mercado Pago), AWS S3 image storage, admin panel, stock synchronization, and automated testing with CI."
     },
     "spotify": {
   "title": "Sinestesia – Spotify Explorer",

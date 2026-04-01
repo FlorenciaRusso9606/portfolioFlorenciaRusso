@@ -18,13 +18,25 @@ const projects = [
     repoBackend: "https://github.com/FlorenciaRusso9606/backendTpFInal",
   },
   {
-    id: "ecommerce",
-    tech: ["Next.js", "TypeScript", "Express", "PostgreSQL"],
-    demoUrl: "/videos/ecommerce-demo.mp4",
-    repoFrontend: "https://github.com/FlorenciaRusso9606/la_chacra_project",
-    repoBackend:
-      "https://github.com/FlorenciaRusso9606/backend_lachacra_project",
-  },
+  id: "ecommerce",
+  tech: [
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Prisma",
+    "AWS S3",
+    "Mercado Pago",
+    "Docker",
+    "GitHub Actions",
+  ],
+  demoUrl: "/videos/ecommerce-demo.mp4",
+  repoFrontend: "https://github.com/FlorenciaRusso9606/la_chacra_project",
+  repoBackend:
+    "https://github.com/FlorenciaRusso9606/backend_lachacra_project",
+}
+,
   {
     id: "spotify",
     tech: ["React", "Vite", "Spotify API", "PKCE OAuth"],

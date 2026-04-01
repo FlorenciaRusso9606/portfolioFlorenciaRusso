@@ -12,6 +12,8 @@ import {
   SiPostgresql,
   SiGit,
   SiFramer,
+  SiPrisma,
+  SiDocker
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
@@ -27,6 +29,8 @@ const techs = [
   { name: "PostgreSQL", icon: SiPostgresql },
   { name: "Git", icon: SiGit },
   { name: "Framer Motion", icon: SiFramer },
+  { name: "Prisma", icon: SiPrisma },
+{ name: "Docker", icon: SiDocker },
 ];
 
 export default function Technologies() {

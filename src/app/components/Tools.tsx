@@ -9,6 +9,7 @@ import {
   SiVercel,
   SiRailway,
   SiPostman,
+  SiAmazon
 } from "react-icons/si";
 
 const tools = [
@@ -17,6 +18,7 @@ const tools = [
   { name: "Vercel", icon: SiVercel },
   { name: "Railway", icon: SiRailway },
   { name: "Postman", icon: SiPostman },
+  { name: "AWS S3", icon: SiAmazon },
 ];
 
 export default function Tools() {
