@@ -30,19 +30,19 @@
   "projects": {
     "social": {
       "title": "Social Network (Final Project)",
-      "description": "Full stack social network with JWT authentication, posts, comments and a user reaction system."
+      "description": "The challenge was building a complete social network as a team without overwriting each other's code. We designed the relational model with 7 entities and the REST APIs with JWT authentication. We worked with feature branches, PRs and code reviews, which let us integrate changes continuously without regressions."
     },
     "ecommerce": {
       "title": "E-commerce - La Chacra",
-      "description": "E-commerce with persistent cart, real payments (Mercado Pago), AWS S3 image storage, admin panel, stock synchronization, and automated testing with CI."
+      "description": "A real business needed to sell online and operate independently. I integrated Mercado Pago with idempotent webhooks to prevent duplicate orders, set up AWS S3 image storage with isolated credentials, and delivered an admin panel so the business runs without depending on a developer. I built a CI/CD pipeline that runs migrations and tests on every PR, eliminating the risk of deploying broken code to a live site."
     },
     "spotify": {
   "title": "Sinestesia – Spotify Explorer",
-  "description": "Spotify-based web application integrating private API with PKCE authentication. Includes dynamic search, playlist management and artist tracking."
+  "description": "We wanted to understand real OAuth flows in the frontend, without a backend. We implemented the full PKCE flow with Spotify to access searches, albums and user playlists. The main challenge was managing the token lifecycle and multiple API endpoints without exposing credentials."
 },
 "inta": {
   "title": "INTA – Agricultural Cost Visualizer",
-  "description": "Web application for agricultural cost estimation with modular calculation systems and interactive data visualization using Chart.js."
+  "description": "Technicians were estimating agricultural costs manually with no way to compare scenarios. We built calculation modules for plant health, fertilization and machinery, with custom input loading and interactive Chart.js visualizations. Focus on field usability: responsive layout with automatic per-hectare calculations."
 }
 
   },

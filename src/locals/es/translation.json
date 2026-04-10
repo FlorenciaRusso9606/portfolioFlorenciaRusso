@@ -29,19 +29,19 @@
   "projects": {
     "social": {
       "title": "Red Social (TFI)",
-      "description": "Red social full stack con autenticación JWT, publicaciones, comentarios y sistema de reacciones entre usuarios."
+      "description": "El desafío era construir una red social completa en equipo sin que el código de cada integrante pisara el del otro. Diseñamos el modelo relacional con 7 entidades y las APIs REST con autenticación JWT. Trabajamos con feature branches, PRs y code reviews, lo que nos permitió integrar cambios continuamente sin regresiones."
     },
     "ecommerce": {
       "title": "E-commerce – La Chacra",
-      "description": "E-commerce con carrito persistente, pagos reales (Mercado Pago), almacenamiento de imágenes en AWS S3, panel de administración, sincronización de stock y pruebas automatizadas con CI."
+      "description": "Un negocio real necesitaba vender online de forma autónoma. Integré Mercado Pago con webhooks idempotentes para evitar órdenes duplicadas, diseñé el almacenamiento en AWS S3 con credenciales aisladas y entregué un panel de administración para que el negocio opere sin depender de un desarrollador. Implementé CI/CD que corre migraciones y tests en cada PR, eliminando el riesgo de deployar código roto a un sitio activo."
     },
     "spotify": {
   "title": "Sinestesia – Explorador Spotify",
-  "description": "Aplicación web integrada con la API privada de Spotify mediante autenticación PKCE. Incluye búsqueda dinámica, gestión de playlists y seguimiento de artistas."
+  "description": "Queríamos entender los flujos OAuth reales en el frontend, sin backend. Implementamos el flujo PKCE completo con Spotify para acceder a búsquedas, álbumes y playlists del usuario. El desafío principal fue manejar el ciclo de vida del token y múltiples endpoints sin exponer credenciales."
 },
 "inta": {
   "title": "INTA – Visualizador de Costos Agropecuarios",
-  "description": "Aplicación web para estimación de costos agrícolas con módulos de cálculo y visualización interactiva de datos mediante Chart.js."
+  "description": "Los técnicos estimaban costos agrícolas manualmente, sin forma de comparar escenarios. Construímos módulos de cálculo para sanidad vegetal, fertilización y maquinaria, con carga de insumos personalizados y visualización interactiva con Chart.js. Foco en usabilidad de campo: responsive y con cálculo automático por hectárea."
 }
 
   },
