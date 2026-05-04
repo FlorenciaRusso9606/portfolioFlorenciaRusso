@@ -8,7 +8,7 @@ interface Props {
   title: string;
   description: string;
   tech: string[];
-  demoUrl: string;
+  demoUrl?: string;
   repoFrontend?: string;
   repoBackend?: string;
   repo?: string;
@@ -74,7 +74,8 @@ export default function ProjectCard({
       </div>
 
       <div className="relative z-10 flex-1">
-        <video
+        {demoUrl && 
+           <video
           src={demoUrl}
           controls
           playsInline
@@ -84,7 +85,8 @@ export default function ProjectCard({
             dark:border-neutral-800
           "
         />
-
+}
+     
         <h3
           className={`
           text-xl font-medium mb-2

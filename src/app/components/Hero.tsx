@@ -12,7 +12,9 @@ export default function Hero() {
 
  const { t, i18n  } = useTranslation();
  const currentLang = i18n.resolvedLanguage?.startsWith("es") ? "es" : "en";
-const cvPath = `/cv/${currentLang}/Florencia_Russo_CV_FullStack.pdf`;
+const cvPath = currentLang === "es" 
+  ? "/cv/es/Florencia_Russo_CV_ES.pdf"
+  : "/cv/en/Florencia_Russo_CV_EN.pdf";
 
   const rocketY = useTransform(
     scrollYProgress,

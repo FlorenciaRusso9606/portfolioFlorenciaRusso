@@ -4,20 +4,21 @@ import { useTranslation } from "react-i18next";
 
 const projects = [
   {
-    id: "social",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Express",
-      "PostgreSQL",
-      "JWT",
-      "Material UI",
-    ],
-    demoUrl: "/videos/red-social-demo.mp4",
-    repoFrontend: "https://github.com/briabril/TPFinal-TUDW",
-    repoBackend: "https://github.com/FlorenciaRusso9606/backendTpFInal",
-  },
-  {
+  id: "olist",
+  tech: [
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "Prisma",
+    "Docker",
+    "Jest",
+    "TanStack Query",
+  ],
+  repoFrontend: "https://github.com/FlorenciaRusso9606/olist-dashboard",
+},
+{
   id: "ecommerce",
   tech: [
     "Next.js",
@@ -37,18 +38,34 @@ const projects = [
     "https://github.com/FlorenciaRusso9606/backend_lachacra_project",
 }
 ,
+ {
+    id: "inta",
+    tech: ["React", "Vite", "Tailwind", "Chart.js", "React Router"],
+    demoUrl: "/videos/inta-demo.mp4",
+    repo: "https://github.com/TomasAcua/ProyectoINTA",
+  },
+  {
+    id: "social",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Express",
+      "PostgreSQL",
+      "JWT",
+      "Material UI",
+    ],
+    demoUrl: "/videos/red-social-demo.mp4",
+    repoFrontend: "https://github.com/briabril/TPFinal-TUDW",
+    repoBackend: "https://github.com/FlorenciaRusso9606/backendTpFInal",
+  },
+  
   {
     id: "spotify",
     tech: ["React", "Vite", "Spotify API", "PKCE OAuth"],
     demoUrl: "/videos/spotify-demo.mp4",
     repo: "https://github.com/Rocio-Ayelen-Fernandez/TP_React_2",
   },
-  {
-    id: "inta",
-    tech: ["React", "Vite", "Tailwind", "Chart.js", "React Router"],
-    demoUrl: "/videos/inta-demo.mp4",
-    repo: "https://github.com/TomasAcua/ProyectoINTA",
-  },
+ 
 ];
 
 export default function Projects() {

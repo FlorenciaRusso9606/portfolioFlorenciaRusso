@@ -6,7 +6,7 @@
   } ,
    "heroSection":
   {
-  "intro": "Desarrolladora Full Stack especializada en React, Next.js y Node.js, enfocada en construir aplicaciones web funcionales y escalables.",
+"intro": "Desarrolladora Full Stack con experiencia en pipelines de datos, arquitectura hexagonal y sistemas críticos en producción. Disponible para trabajo presencial o híbrido en Neuquén y el Alto Valle.",
     "cv": "Descargar CV"
 
   },
@@ -27,6 +27,10 @@
     "repoBackend": "Repo Backend"
   },
   "projects": {
+    "olist": {
+  "title": "Dashboard Analítico de Operaciones — Prueba Técnica",
+  "description": "Sistema de análisis sobre 100k órdenes reales. Pipeline ETL automatizado (raw → clean → dwh) con esquema estrella en PostgreSQL, arquitectura hexagonal en backend y 9 KPIs calculados server-side. 18 tests con inyección de dependencias real. Frontend con TanStack Query y Recharts."
+},
     "social": {
       "title": "Red Social (TFI)",
       "description": "El desafío era construir una red social completa en equipo sin que el código de cada integrante pisara el del otro. Diseñamos el modelo relacional con 7 entidades y las APIs REST con autenticación JWT. Trabajamos con feature branches, PRs y code reviews, lo que nos permitió integrar cambios continuamente sin regresiones."

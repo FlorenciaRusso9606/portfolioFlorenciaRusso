@@ -6,7 +6,7 @@
   },
   "heroSection":
   {
-  "intro": "Full Stack Developer specializing in React, Next.js and Node.js, focused on building functional and scalable web applications.",
+"intro": "Full Stack Developer with experience in data pipelines, hexagonal architecture and production systems. Available for on-site or hybrid work in Neuquén and the Alto Valle.",
   "cv": "Download CV" 
 
   },
@@ -28,6 +28,10 @@
 
   },
   "projects": {
+    "olist": {
+  "title": "Sales Analytics Dashboard — Full-Stack Challenge",
+  "description": "Built an end-to-end analytics system on 100k real e-commerce orders. Designed an automated ETL pipeline (raw → clean → dwh) with star schema in PostgreSQL, hexagonal architecture in the backend, and 9 KPIs calculated server-side. 18 tests with real dependency injection. Frontend with TanStack Query and Recharts."
+},
     "social": {
       "title": "Social Network (Final Project)",
       "description": "The challenge was building a complete social network as a team without overwriting each other's code. We designed the relational model with 7 entities and the REST APIs with JWT authentication. We worked with feature branches, PRs and code reviews, which let us integrate changes continuously without regressions."
